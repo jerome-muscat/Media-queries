@@ -8,6 +8,16 @@
     <title>Sydney</title>
     <link rel="stylesheet" href="../css/australie.css">
     <link rel="stylesheet" href="../css/voyages.css">
+   
+    <!-- Pour tous les types d'écrans ayant une résolution inférieur à 990px (tablettes et téléphones) -->
+    <link rel="stylesheet" media="all and (max-device-width:990px)" href="../css/commun.css">
+
+    <!-- Pour tous les types d'écran ayant une résolution inférieur à 570px (téléphones) -->
+    <link rel="stylesheet" media="all and (max-device-width:570px)" href="../css/mobile.css">
+
+    <!-- Pour tous les types d'écran ayant une résolution comprise entre 750px et 990px (tablettes) -->
+    <link rel="stylesheet" media="all and (min-device-width:750px) and (max-device-width:990px)" href="../css/tablette.css">
+
     <link rel="icon" type="image/png" href="../img-voyages/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,6 +32,8 @@
 
 <body id="sydney">
     <header>
+
+        <!-- Menu de navigation pour les ordinateurs -->
         <nav>
             <ul class="menu">
                 <li><a href="../index.html">Accueil</a></li>
@@ -102,6 +114,73 @@
                             <li><a href="../voyage-australie/australie.html">Australie</a></li>
                         </ul>
                     </div>
+                </ul>
+            </ul>
+        </nav>
+
+        <!-- Menu de navigation pour les tablettes et les téléphones -->
+        <nav id="menuToggle">
+            <input type="checkbox" />
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <ul id="menu">
+                <li><a href="../index.html">Accueil</a></li>
+                <li class="menu-plié"><a href="#">Continents</a></li>
+                <ul class="menu-déplié1">
+                    <li><a href="#">Amérique du Sud</a></li>
+                    <ul>
+                        <li><a href="../voyage-argentine/argentine.html">Argentine</a></li>
+                    </ul>
+                    <li><a href="#">Europe</a></li>
+                    <ul>
+                        <li><a href="../voyage-italie/italie.html">Italie</a></li>
+                    </ul>
+                    <li><a href="#">Amérique du Nord</a></li>
+                    <ul>
+                        <li><a href="../voyage-usa/usa.html">USA</a></li>
+                    </ul>
+                    <li><a href="#">Asie</a></li>
+                    <ul>
+                        <li><a href="../voyage-japon/japon.html">Japon</a></li>
+                    </ul>
+                    <li><a href="#">Afrique</a></li>
+                    <ul>
+                        <li><a href="../voyage-seychelles/seychelles.html">Les Seychelles</a></li>
+                    </ul>
+                    <li><a href="#">Océanie</a></li>
+                    <ul>
+                        <li><a href="../voyage-australie/australie.html">Australie</a></li>
+                    </ul>
+                </ul>
+                <li class="menu-plié"><a href="#">Membres</a></li>
+                <ul class="menu-déplié2">
+                    <li><a href="#">Tara</a></li>
+                    <ul>
+                        <li><a href="../voyage-argentine/argentine.html">Argentine</a></li>
+                    </ul>
+                    <li><a href="#">Lucas</a></li>
+                    <ul>
+                        <li><a href="../voyage-italie/italie.html">Italie</a></li>
+                    </ul>
+                    <li><a href="#">Andrea</a></li>
+                    <ul>
+                        <li><a href="../voyage-usa/usa.html">USA</a></li>
+                    </ul>
+                    <li><a href="#">Alexis</a></li>
+                    <ul>
+                        <li><a href="../voyage-japon/japon.html">Japon</a></li>
+                    </ul>
+                    <li><a href="#">Sophie</a></li>
+                    <ul>
+                        <li><a href="./seychelles.html">Les Seychelles</a></li>
+                    </ul>
+                    <li><a href="#">Jérôme</a></li>
+                    <ul>
+                        <li><a href="../voyage-australie/australie.html">Australie</a></li>
+                    </ul>
                 </ul>
             </ul>
         </nav>
@@ -372,16 +451,18 @@
 
         <section class="socials">
             <p>© L'Agence Tourisme. Tous droits réservés. | Mentions légales | Cookies | Référent handicap : Tara</p>
-            <a href="https://fr-fr.facebook.com/">
-                <i class="fa-brands fa-facebook"></i></a>
-            <a href="https://www.instagram.com/?hl=fr">
-                <i class="fa-brands fa-instagram"></i></a>
-            <a href="https://twitter.com/?lang=fr">
-                <i class="fa-brands fa-twitter"></i></a>
-            <a href="https://www.youtube.com/">
-                <i class="fa-brands fa-youtube"></i></a>
-            <a href="https://www.tiktok.com/fr/">
-                <i class="fa-brands fa-tiktok"></i></a>
+            <div>
+                <a href="https://fr-fr.facebook.com/">
+                    <i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/?hl=fr">
+                    <i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/?lang=fr">
+                    <i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.youtube.com/">
+                    <i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.tiktok.com/fr/">
+                    <i class="fa-brands fa-tiktok"></i></a>
+            </div>
         </section>
     </footer>
 </body>

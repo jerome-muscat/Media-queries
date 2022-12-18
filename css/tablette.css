@@ -1,0 +1,73 @@
+/* éléments commun aux pages australie et sydney */
+:is(#australie, #sydney) main > section:first-child ul >li {
+    background-color: white;
+} 
+main section:first-child > ul{
+    display: grid!important;
+    grid-template-columns: 2fr 1f;
+    grid-template-rows: 3fr 1fr;
+}
+
+main section:first-child > ul > li:first-child {
+    grid-column: 1 / 5;
+    grid-row-start: 1;
+    display: flex;
+    align-items: center;
+    margin:0 26.7%!important;
+}
+
+/* éléments de la pages australie */
+#grille {
+    grid-template-columns: 1fr 1fr!important;
+    grid-template-rows: repeat(5, 1fr)!important;
+    height:200vh;
+    padding: 2% 8%;
+}
+
+#grille li:last-child {
+    grid-column: auto;
+    grid-row-start: auto;
+}
+
+.gauche, .droite {
+    padding: 2.5% 4%;
+}
+
+#mountains {
+    padding-bottom: 5%;
+}
+
+table {
+    display: none;
+}
+
+#tableau {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    padding: 2%;
+}
+
+#tableau li:first-child {
+    grid-column: 1/4;
+    grid-row-start: 1;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+#tableau img {
+    width: 100%;
+    height:auto!important;
+}
+
+#tableau li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#nourriture {
+    margin-top: 4%;
+}

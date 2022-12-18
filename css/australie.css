@@ -192,3 +192,7 @@ main a:hover {
 :is(.droite, .gauche) img {
     height: 20vw;
 }
+
+#tableau {
+    display: none;
+}

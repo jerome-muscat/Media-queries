@@ -1,0 +1,84 @@
+/* éléments commun aux pages australie et sydney */
+:is(#australie, #sydney) main > section:first-child {
+    background-color: rgba(255, 255, 255, 0.776);
+    margin-bottom: 5%;
+}
+
+:is(#australie, #sydney) main section:first-child ul{
+    flex-direction: column;
+}
+
+:is(#australie, #sydney) main section:first-child ul > li {
+    margin: 2.5% 0;
+    height: min-content;
+}
+
+/* éléments de la pages australie */
+.impair, #nourriture {
+    margin-top: 10%!important;
+    padding: 2% 0!important;
+}
+
+.impair #grille {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 5%;
+}
+
+#grille > li {
+    padding: 4% 0;
+} 
+
+#nourriture td {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 6%;
+}
+
+#nourriture td:nth-child(2n) {
+    padding-bottom: 8%;
+}
+
+:is(#nourriture, .impair) img {
+    width: 100%;
+    height: auto!important;
+}
+
+#nourriture > p {
+    padding-bottom: 6%;
+}
+
+/* éléments de la page sydney */
+.centrer {
+    margin-top: 10%;
+}
+
+.gauche, .droite {
+    flex-direction: column;
+    padding: 0;
+}
+
+:is(.gauche, .droite) img {
+    width: 100%;
+    height: auto;
+}
+
+:is(.droite, .gauche) img:hover {
+    transform: none;
+    transition: none;
+    margin: 0;
+}
+
+.droite img:hover ~ div {
+    padding-right: 0;
+}
+
+.gauche img:hover ~ div {
+    padding-left: 0;
+}
+ 
+.gauche, .droite, .centrer {
+    padding: 5%!important;
+}
