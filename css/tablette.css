@@ -29,14 +29,6 @@ main section:first-child > ul > li:first-child {
     grid-row-start: auto;
 }
 
-.gauche, .droite {
-    padding: 2.5% 4%;
-}
-
-#mountains {
-    padding-bottom: 5%;
-}
-
 table {
     display: none;
 }
@@ -70,4 +62,13 @@ table {
 
 #nourriture {
     margin-top: 4%;
+}
+
+/* éléments de la page sydney */
+.gauche, .droite {
+    padding: 2.5% 4%;
+}
+
+#mountains {
+    padding-bottom: 5%;
 }
